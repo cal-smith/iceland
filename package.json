@@ -1,0 +1,38 @@
+{
+  "name": "iceland",
+  "version": "1.0.0",
+  "description": "😄",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "rm -rf dist && webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hansolo669/iceland.git"
+  },
+  "author": "cal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hansolo669/iceland/issues"
+  },
+  "homepage": "https://github.com/hansolo669/iceland#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.4.0",
+    "css-loader": "^0.28.0",
+    "extract-loader": "^0.1.0",
+    "file-loader": "^0.11.1",
+    "marked": "^0.3.6",
+    "minimist": "^1.2.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0"
+  }
+}
