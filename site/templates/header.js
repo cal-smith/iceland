@@ -9,6 +9,6 @@ module.exports = function(locals) {
 		<body>
 		<main>
 			<header>
-				<h1><a href="/">Iceland</a></h1>
+				<h1><a href="./">Iceland</a></h1>
 			</header>`;
 }
