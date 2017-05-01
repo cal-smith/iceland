@@ -26,9 +26,11 @@ async function renderIndex() {
 	*/
 	let files = await readDir(posts);
 	files = files.map(file => {
+		let title = file.replace(/^\d-/, "").replace(/\.md$/, "").replace(/-/g, " ");
+		title = title[0].toUpperCase() + title.slice(1);
 		return {
 			link: file.replace(/\.md$/, ".html"),
-			title: file.replace(/^\d-/, "").replace(/\.md$/, "")
+			title
 		}
 	});
 	writeFile(`${out}/index.html`, indexTemplate({postlist: files}));

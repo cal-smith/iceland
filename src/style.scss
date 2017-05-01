@@ -1,13 +1,16 @@
 @import "./normalize.scss";
 
+$primary-gray: #272727;
+$primary-blue: #2196F3;
+
 html, body, main {
 	height: 100%;
 }
 main {
-  color: #272727;
+  color: $primary-gray;
 }
 a {
-  color: #2196F3;
+  color: $primary-blue;
   text-decoration: none;
 }
 a:hover {
@@ -18,12 +21,12 @@ a:hover {
   }
 }
 a:visited {
-  color: #2196F3;
+  color: $primary-blue;
 }
 header {
   width: 100%;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-  background: #272727;
+  background: $primary-gray;
   height: 40px;
   padding: 20px 0;
   position: absolute;
@@ -65,23 +68,27 @@ main {
     padding-right: 90px;
     &:hover {
       &:after {
-        display: block;
+        right: 40px;
+        opacity: 1;
+        transform: rotate(135deg) scale(1);
       }
     }
     &:after {
       content: "";
-      display: none;
+      display: block;
       position: absolute;
       height: 25px;
       width: 25px;
-      right: 40px;
+      right: 50px;
       top: 35px;
       border-top: 1px solid black;
       border-left: 1px solid black;
-      transform: rotate(135deg);
+      transform: rotate(135deg) scale(0.9);
+      opacity: 0;
+      transition: all 0.3s ease;
     }
     .title {
-      color: #2196F3;
+      color: $primary-blue;
       display: inline-block;
       font-size: 20px;
       margin-bottom: 10px;
@@ -91,7 +98,7 @@ main {
     }
     .pull {
       font-style: italic;
-      color: #272727;
+      color: $primary-gray;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
