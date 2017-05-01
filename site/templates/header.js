@@ -6,6 +6,17 @@ module.exports = function(locals) {
 			<title>${locals.title}</title>
 			<link rel="stylesheet" href="bundle.css">
 			<link rel="manifest" href="manifest.json">
+			<meta name="viewport" content="width=device-width">
+			<noscript>
+				<style>
+					main {
+						padding-top: 100px;
+					}
+					.map {
+						height: 0px;
+					}
+				</style>
+			</noscript>
 		</head>
 		<body>
 		<main>
