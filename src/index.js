@@ -3,6 +3,10 @@ import './style.scss';
 
 console.log("hello, world");
 
+// navigator.serviceWorker.register("servicebundle.js")
+// 	.then(registration => console.log("added service worker"))
+// 	.catch(error => console.log("failed to add service worker", error));
+
 // temp until babel fixes it's webcomponent compat
 // see:
 // https://github.com/babel/babel/issues/4480

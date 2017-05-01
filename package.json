@@ -4,8 +4,11 @@
   "description": "😄",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "rm -rf dist && webpack && node index.js ./site -o ./dist",
+    "dev": "webpack --watch",
+    "build": "rm -rf dist && webpack && node index.js ./site -o ./dist && npm run moveextra",
+    "build:service": "cp ./src/service-index.js ./dist/servicebundle.js",
+    "build:aservice": "webpack --config webpack-service.config.js",
+    "moveextra": "cp ./site/*.json ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -5,6 +5,7 @@ module.exports = function(locals) {
 		<head>
 			<title>${locals.title}</title>
 			<link rel="stylesheet" href="bundle.css">
+			<link rel="manifest" href="manifest.json">
 		</head>
 		<body>
 		<main>
