@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     entry: './src/index.js',
@@ -24,6 +25,9 @@ module.exports = {
             }
         ]
     },
+    // plugins: [
+    //     new webpack.optimize.UglifyJsPlugin()
+    // ],   
     devtool: 'source-map',
     target: 'web',
     devServer: {

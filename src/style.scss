@@ -3,6 +3,27 @@
 $primary-gray: #272727;
 $primary-blue: #2196F3;
 
+:root {
+  --primary-gray: #272727;
+  --primary-blue: #2196F3;
+}
+
+image-list {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  align-content: stretch;
+  justify-content: space-around;
+  background: var(--primary-gray);
+}
+
+image-list img {
+  max-height: 200px;
+  margin: 5px;
+  background: white;
+  padding: 5px;
+}
+
 html, body, main {
 	height: 100%;
 }
@@ -41,6 +62,11 @@ main {
   max-width: 1024px;
   margin: 0 auto;
   padding-top: 480px;
+  &.post {
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 .map {
   width: 100%;
